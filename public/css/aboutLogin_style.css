@@ -1,0 +1,271 @@
+/* Stylesheet CSS for About Page */
+
+
+/* Styling for Body */
+body {
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    margin: 0;
+}
+
+
+/* Styling for Header */ 
+header {
+  background: #232d32;
+  width: 100%;
+  //height: 37px;
+  height: 60px;    
+  position: fixed;
+  z-index: 1;
+}
+
+header h1 {
+  display: inline-block;
+  margin-left: 10px;
+  padding-right: 20px;
+  padding-left: 10px;
+}
+
+a {
+  text-decoration: none;
+  vertical-align: middle;
+  transition-duration: 04.s;    
+}
+
+a:hover {
+    color: #4CE457;
+}
+
+.header-list-left{
+  display: inline-block;
+}
+.header-list-right{
+  display: inline-block;
+  float: right;
+  padding-right: 15px;
+}
+
+.box {
+    display: inline-block;
+    padding: 10px;
+    vertical-align: top;
+    padding-right: 20px;
+}
+.header-item {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.header-item a {
+  padding: 10px;
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-weight:100px;    
+  font-size: 14px;
+  text-decoration: none;
+  color: white;
+  transition-duration: 0.4s;
+}
+
+div .container-1 {
+    position: relative;
+    top: -5px;
+}
+
+i.fa {
+    color: white;
+}
+
+input#search {
+  width: 150px;
+  height: 25px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  position: relative;
+  padding-left: 5px;
+  margin-left: 5px;
+}
+
+.header-item a:hover {
+    color: #4CE457;
+}
+/*Account Dropdown for Header*/
+    /*Dropdown Button*/
+    .dropbtn {
+        background-color: #4CAF50;
+        border-radius: 50%;
+        margin-top: 1px;
+        padding: 2px;
+        border: none;
+        cursor: pointer;
+    }
+
+    /* Dropdown button on hover & focus */
+    .dropbtn:hover, .dropbtn:focus {
+        background-color: #3e8e41;
+    }
+
+    /* The container <div> - needed to position the dropdown content */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+        right:0;
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+
+    /* Links inside the dropdown */
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {background-color: #f1f1f1}
+
+    /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+    .show {display:block;}
+
+
+
+/* Styling for Main Body */
+main {
+    display: inline-block;
+    padding: 20px 20px 100px -30px;
+    min-height: 300px;
+    width: 100%;
+    background-color: lightgray;
+}
+
+div .wrapper {
+    width: 100%;
+    height: auto;
+}
+
+main div .aboutTitle {
+    margin-top: 10%;
+    font-size: 100px;
+    font-weight: 200;
+}
+
+.info-div {
+    margin: auto;
+    width: 80%;
+    position: relative;
+    display: flex;
+}
+
+.info {
+    position: relative;
+    margin: 20px;
+    width: 100%;
+    height: 350px;
+    background-color: #4CAF57;
+}
+
+.info h2 {
+    margin: 30px;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 200;
+    text-decoration: none;
+}
+
+.info p {
+    margin: 30px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+.info i.fa {
+    position: relative;
+    display: block;
+    color: white;
+    font-size: 100px;
+    text-align: center;
+    padding-top: 80px;
+}
+
+/* Styling for Footer */
+footer {
+  background: #232d32;
+  color: white;
+  height: 250px;
+}
+
+.footer-image {
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 30px;
+    position: relative;
+    padding-right: 10px;
+    width: 46%;
+    height: 80%;
+    text-align: right;
+}
+
+.footer-image p {
+    display:inline-block;
+    vertical-align: top;
+    padding-left: 10px;
+    font-size: 33px;
+}
+
+.footerLists{
+  display: inline-block;
+  height: 80%;
+  padding-top: 30px;
+}
+
+.footer-list-left {
+    display: inline-block;
+    padding-right: 20px;
+    padding-left: 20px;
+    vertical-align: top;
+    font-size: 14px;
+}
+
+.leftList{
+  padding-top: 5px;
+  list-style-type: none;
+}
+.leftList a{
+  color: grey;
+}
+.leftList a:hover{
+  color: #4CE457;
+  transition-duration: .4s;
+
+}
+
+.rightList{
+  font-size: 14px;
+  padding-top: 5px;
+  list-style-type: none;
+}
+.rightList a{
+  color: grey;
+}
+.rightList a:hover{
+  color: #4CE457;
+  transition-duration: .4s;
+}
+
+.footer-list-right {
+  font-size: 14px;
+    display: inline-block;
+    padding-left: 30px;
+    position: relative;
+}

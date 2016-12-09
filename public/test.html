@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DONT TOUCH MY TEST PAGE</title>
+    <meta charset = 'utf8'>
+    <script>
+        
+        var convertToQS = function(title, detail, genre, options){
+            var vote = [];
+            for(var i = 0; i < options.length; i++){
+                vote.push(0);
+            }
+            var QS = "title=" + title + "&detail=" + detail + "&genre=" + genre + "&options=" + options + "&vote=" + vote;
+            return QS;
+        }
+        var request = new XMLHttpRequest();
+        request.open('POST', 'http://localhost:3000/createPoll', true);
+        request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        request.send(convertToQS("a", "b", "c", "d"));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
